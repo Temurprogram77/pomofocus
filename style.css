@@ -89,6 +89,7 @@ body {
   width: 12px;
 }
 .padding {
+    cursor: pointer;
   width: fit-content;
   border-radius: 5px;
   padding: 5px 7px;

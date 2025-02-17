@@ -3,9 +3,19 @@ let time = document.querySelector(".time");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
-let min = 1;
+let min = 20;
 let sec = 0;
 let intervall;
+
+btn_pause.addEventListener("click", () => {
+  btn_pause.classList.add("hidden");
+  btn_start.classList.remove("hidden");
+  btn_start.classList.add("style");
+  setTimeout(() => {
+    time.innerText = "20:00";
+    clearInterval(intervall)
+  }, 100);
+});
 
 btn_start.addEventListener("click", () => {
   btn_pause.classList.remove("hidden");
@@ -36,9 +46,9 @@ function updateDisplay() {
   let formattedSec = sec < 10 ? "0" + sec : sec;
   time.innerText = `${formattedMin}:${formattedSec}`;
   if (formattedSec == 0 && formattedMin == 0) {
-    setTimeout(()=>{
-        time.innerText = "20:00";
-    },1000)
+    setTimeout(() => {
+      time.innerText = "20:00";
+    }, 1000);
   }
 }
 
