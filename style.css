@@ -73,8 +73,8 @@ body {
   justify-content: space-between;
 }
 .working {
-    display: flex;
-    gap: 7px;
+  display: flex;
+  gap: 7px;
 }
 .logo {
   font-size: 10px;
@@ -89,7 +89,7 @@ body {
   width: 12px;
 }
 .padding {
-    cursor: pointer;
+  cursor: pointer;
   width: fit-content;
   border-radius: 5px;
   padding: 5px 7px;
@@ -100,15 +100,35 @@ body {
   font-weight: 600;
   background: #ffffff22;
 }
+.settings_modal {
+  background: rgba(255, 255, 255, 0.305);
+  backdrop-filter: blur(10px);
+  position: fixed;
+  padding: 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+.colors {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 .green {
-    background: #518a58;
+  background: #518a58;
 }
 .red {
-    background: #BA4949;
+  background: #ba4949;
 }
 .blue {
-    background: #38858A;
+  background: #38858a;
 }
 .dark {
-    background: #545764;
+  background: #545764;
+}
+.sized {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
 }

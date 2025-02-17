@@ -1,11 +1,17 @@
 let style_st = document.querySelector(".style");
 let time = document.querySelector(".time");
+let setting = document.querySelector(".setting");
+let modal = document.querySelector(".settings_modal");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
 let min = 20;
 let sec = 0;
 let intervall;
+
+setting.addEventListener("click", ()=>{
+
+})
 
 btn_pause.addEventListener("click", () => {
   btn_pause.classList.add("hidden");
