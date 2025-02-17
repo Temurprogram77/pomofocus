@@ -2,6 +2,12 @@ let style_st = document.querySelector(".style");
 let time = document.querySelector(".time");
 let setting = document.querySelector(".setting");
 let modal = document.querySelector(".settings_modal");
+let green = document.querySelector(".green");
+let red = document.querySelector(".red");
+let dark = document.querySelector(".dark");
+let blue = document.querySelector(".blue");
+let body = document.querySelector("body");
+let active = document.querySelector(".active");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
@@ -9,8 +15,28 @@ let min = 20;
 let sec = 0;
 let intervall;
 
-setting.addEventListener("click", ()=>{
+red.addEventListener('click', ()=>{
+    body.style.backgroundColor = "#ba4949";
+    active.style.backgroundColor = "#A44E4E";
+})
 
+green.addEventListener('click', ()=>{
+    body.style.backgroundColor = "#518a58";
+    active.style.backgroundColor = "#548059";
+})
+
+dark.addEventListener('click', ()=>{
+    body.style.backgroundColor = "#545764";
+    active.style.backgroundColor = "#565963";
+})
+
+blue.addEventListener('click', ()=>{
+    body.style.backgroundColor = "#38858a";
+    active.style.backgroundColor = "#417B80";
+})
+
+setting.addEventListener("click", ()=>{
+    modal.classList.toggle("tog");
 })
 
 btn_pause.addEventListener("click", () => {
