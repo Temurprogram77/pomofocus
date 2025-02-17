@@ -100,3 +100,15 @@ body {
   font-weight: 600;
   background: #ffffff22;
 }
+.green {
+    background: #518a58;
+}
+.red {
+    background: #BA4949;
+}
+.blue {
+    background: #38858A;
+}
+.dark {
+    background: #545764;
+}
