@@ -106,6 +106,7 @@ body {
   background: rgba(255, 255, 255, 0.305);
   backdrop-filter: blur(10px);
   position: fixed;
+  z-index: 3;
   top: 5px;
   right: -300px;
   padding: 15px;
@@ -140,4 +141,11 @@ body {
   width: 20px;
   height: 20px;
   border-radius: 50%;
+}
+.full {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
 }
