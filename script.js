@@ -8,6 +8,7 @@ let dark = document.querySelector(".dark");
 let blue = document.querySelector(".blue");
 let body = document.querySelector("body");
 let active = document.querySelector(".active");
+let btns = document.querySelector(".btns");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
@@ -18,21 +19,25 @@ let intervall;
 red.addEventListener('click', ()=>{
     body.style.backgroundColor = "#ba4949";
     active.style.backgroundColor = "#A44E4E";
+    btns.style.color = "#ba4949"
 })
 
 green.addEventListener('click', ()=>{
     body.style.backgroundColor = "#518a58";
     active.style.backgroundColor = "#548059";
+    btns.style.color = "#518a58"
 })
 
 dark.addEventListener('click', ()=>{
     body.style.backgroundColor = "#545764";
     active.style.backgroundColor = "#565963";
+    btns.style.color = "#545764"
 })
 
 blue.addEventListener('click', ()=>{
     body.style.backgroundColor = "#38858a";
     active.style.backgroundColor = "#417B80";
+    btns.style.color = "#38858a"
 })
 
 setting.addEventListener("click", ()=>{

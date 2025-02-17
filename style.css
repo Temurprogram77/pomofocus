@@ -106,8 +106,8 @@ body {
   background: rgba(255, 255, 255, 0.305);
   backdrop-filter: blur(10px);
   position: fixed;
-  top: 0;
-  right: -0;
+  top: 5px;
+  right: -300px;
   padding: 15px;
   border-radius: 10px;
   display: flex;
@@ -116,7 +116,7 @@ body {
   transition: right 0.2s;
 }
 .tog {
-  right: 0;
+  right: 5px;
 }
 .colors {
   display: flex;
