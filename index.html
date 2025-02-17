@@ -1,85 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pomofocus</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-        body {
-            background-color: #4d774e;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            flex-direction: column;
-            color: white;
-        }
-        .container {
-            text-align: center;
-            background: rgba(255, 255, 255, 0.1);
-            padding: 30px;
-            border-radius: 10px;
-            width: 400px;
-        }
-        .timer-box {
-            background: rgba(255, 255, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            margin-top: 10px;
-        }
-        .timer {
-            font-size: 60px;
-            font-weight: bold;
-        }
-        button {
-            background-color: white;
-            color: #4d774e;
-            border: none;
-            padding: 15px 30px;
-            font-size: 20px;
-            cursor: pointer;
-            border-radius: 5px;
-            margin-top: 20px;
-        }
-        .tasks-container {
-            margin-top: 20px;
-            width: 100%;
-            text-align: left;
-        }
-        .tasks-header {
-            font-size: 18px;
-            font-weight: bold;
-        }
-        .tasks {
-            margin-top: 10px;
-            border: 2px dashed white;
-            padding: 15px;
-            border-radius: 5px;
-            text-align: center;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <h1>Pomofocus</h1>
-    <div class="container">
-        <div class="timer-box">
-            <button style="background: #3e5c3e; color: white; padding: 5px 10px; font-size: 14px; border-radius: 5px;">Pomodoro</button>
-            <button style="background: transparent; color: white; padding: 5px 10px; font-size: 14px; border: none;">Short Break</button>
-            <button style="background: transparent; color: white; padding: 5px 10px; font-size: 14px; border: none;">Long Break</button>
-            <div class="timer">25:00</div>
-            <button>START</button>
+    <div class="header">
+        <div class="logo">
+            <a href="#">
+                <img src="true.png" alt="logo">
+            </a>
+            <h2>Pomofocus</h2>
         </div>
-        <p>#2 Time to focus!</p>
-        <div class="tasks-container">
-            <p class="tasks-header">Tasks</p>
-            <div class="tasks">+ Add Task</div>
+        <div class="working">
+            <div class="report padding">
+                <img src="graph-white.png" alt="graph-white">
+                Report
+            </div>
+            <div class="setting padding">
+                <img src="setting.png" alt="setting">
+                Setting
+            </div>
+            <div class="sign-in padding">
+                <img src="user.png" alt="user">
+                Sign In
+            </div>
+            <div class="menu padding">
+                <img src="menu.png" alt="menu">
+            </div>
         </div>
     </div>
+    <div class="container">
+        <div class="pages">
+            <div class="pomadoro active">Pomadoro</div>
+            <div class="short-break">Short Break</div>
+            <div class="long-break">Long Break</div>
+        </div>
+        <div class="time">25:00</div>
+        <div class="btns">
+            <div class="start">START</div>
+            <div class="pause hidden">PAUSE</div>
+        </div>
+    </div>
+    <p>#2</p>
+    <p>Time to focus!</p>
+
+    <script src="script.js"></script>
 </body>
+
 </html>
