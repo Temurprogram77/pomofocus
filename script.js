@@ -11,12 +11,29 @@ let active = document.querySelector(".active");
 let btns = document.querySelector(".btns");
 let full = document.querySelector(".full");
 let closeBtn = document.querySelector(".close_btn");
+let pomodoro = document.querySelector('.pomadoro')
+let short_break = document.querySelector(".short-break");
+let long_break = document.querySelector(".long-break");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
 let min = 20;
 let sec = 0;
 let intervall;
+
+pomodoro.addEventListener('click', ()=>{
+  console.log("salom");
+  body.style.backgroundColor = "#518a58";
+  active.style.backgroundColor = "#518a58";
+})
+short_break.addEventListener('click', ()=>{
+  body.style.backgroundColor = "#38858a";
+  active.style.backgroundColor = "#38858a";
+})
+long_break.addEventListener('click', ()=>{
+  body.style.backgroundColor = "#437EA8";
+  active.style.backgroundColor = "#437EA8";
+})
 
 red.addEventListener("click", () => {
   body.style.backgroundColor = "#ba4949";

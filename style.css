@@ -28,10 +28,9 @@ body {
   cursor: pointer;
 }
 .active {
-  padding: 2px 10px;
+  padding: 2px 5px;
   border-radius: 5px;
   transition: background 0.5s;
-  background: #548059;
 }
 .time {
   margin: 10px 0;
@@ -182,7 +181,7 @@ body {
 }
 
 #checkbox:checked ~ .label::before {
-  left: 22px;
+  left: 23px;
   background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -191,11 +190,11 @@ body {
 .label::before {
   position: absolute;
   content: "";
-  height: 20px;
+  height: 19px;
   width: 20px;
   border-radius: 50%;
   background: #fff;
-  left: 3px;
+  left: 2px;
   transition: 0.4s;
 }
 .timer {
@@ -207,8 +206,8 @@ body {
 .timer input {
   width: 60px;
   height: 25px;
-  border-radius: 5px;
-  border: none;
+  border-radius: 3px;
+  border: 1.4px solid black;
   outline: none;
   padding: 5px;
 }
@@ -221,4 +220,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+.auto-start {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logn-break {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.logn-break input {
+  width: 40px;
+  height: 30px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1.4px solid black;
+  outline: none;
 }
