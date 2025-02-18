@@ -15,12 +15,17 @@ let pomodoro = document.querySelector('.pomadoro')
 let short_break = document.querySelector(".short-break");
 let long_break = document.querySelector(".long-break");
 let bg = document.querySelector(".bg");
+let logo = document.querySelector(".logo");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
 let min = 20;
 let sec = 0;
 let intervall;
+
+logo.addEventListener('click', ()=>{
+  window.location.reload();
+})
 
 pomodoro.addEventListener('click', ()=>{
   console.log("salom");

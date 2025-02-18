@@ -86,6 +86,10 @@ body {
   align-items: center;
   gap: 5px;
 }
+a {
+  color: #fff;
+  text-decoration: none;
+}
 .logo img {
   width: 12px;
 }
