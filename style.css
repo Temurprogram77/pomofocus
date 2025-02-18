@@ -108,7 +108,7 @@ body {
   position: fixed;
   z-index: 3;
   top: 10px;
-  right: -300px;
+  /* right: -300px; */
   padding: 15px;
   border-radius: 10px;
   display: flex;
@@ -150,4 +150,36 @@ body {
   position: fixed;
   top: 0;
   left: 0;
+}
+.label {
+  height: 30px;
+  width: 60px;
+  background-color: #d1d1d1;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s;
+}
+#checkbox {
+  display: none;
+}
+
+#checkbox:checked ~ .label::before {
+  left: 32px;
+  background-color: #000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.label::before {
+  position: absolute;
+  content: "";
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #000;
+  left: 3px;
+  transition: 0.4s;
 }
