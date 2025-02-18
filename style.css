@@ -103,7 +103,7 @@ body {
   background: #ffffff22;
 }
 .settings_modal {
-  background: rgba(255, 255, 255, 0.305);
+  background: rgb(255, 255, 255);
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 3;
@@ -117,6 +117,7 @@ body {
   align-items: center;
   gap: 2rem;
   transition: right 0.2s;
+  color: #423b3b;
 }
 .settings_modal h2 {
   font-size: 13px;
@@ -128,9 +129,17 @@ body {
   cursor: pointer;
 }
 .colors {
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   gap: 5px;
+}
+.colors2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 .green {
   background: #518a58;
@@ -160,7 +169,7 @@ body {
 .label {
   height: 23px;
   width: 45px;
-  background-color: #d1d1d1;
+  background-color: #818181;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -174,7 +183,7 @@ body {
 
 #checkbox:checked ~ .label::before {
   left: 22px;
-  background-color: #000;
+  background-color: #fff;
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -185,7 +194,7 @@ body {
   height: 20px;
   width: 20px;
   border-radius: 50%;
-  background: #000;
+  background: #fff;
   left: 3px;
   transition: 0.4s;
 }
