@@ -10,6 +10,7 @@ let body = document.querySelector("body");
 let active = document.querySelector(".active");
 let btns = document.querySelector(".btns");
 let full = document.querySelector(".full");
+let closeBtn = document.querySelector(".close_btn");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
@@ -46,6 +47,10 @@ setting.addEventListener("click", () => {
   full.classList.toggle("hidden");
 });
 full.addEventListener("click", () => {
+  modal.classList.remove("tog");
+  full.classList.add("hidden");
+});
+closeBtn.addEventListener("click", () => {
   modal.classList.remove("tog");
   full.classList.add("hidden");
 });

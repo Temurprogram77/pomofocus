@@ -108,7 +108,7 @@ body {
   position: fixed;
   z-index: 3;
   top: 10px;
-  /* right: -400px; */
+  right: -400px;
   padding: 15px;
   border-radius: 10px;
   display: flex;
@@ -192,7 +192,7 @@ body {
 .timer {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
   text-align: start;
 }
 .timer input {
@@ -206,4 +206,10 @@ body {
 .timer p {
   font-size: 10px;
   font-weight: 600;
+}
+.exit {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
