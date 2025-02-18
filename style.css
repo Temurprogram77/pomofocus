@@ -107,16 +107,19 @@ body {
   backdrop-filter: blur(10px);
   position: fixed;
   z-index: 3;
-  bottom: -300px;
+  top: 10px;
+  right: -300px;
   padding: 15px;
   border-radius: 10px;
   display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 2rem;
-  transition: bottom 0.2s;
+  transition: right 0.2s;
 }
 .tog {
-  bottom: 5px;
+  right: 5px;
 }
 .colors {
   display: flex;
