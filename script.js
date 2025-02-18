@@ -11,7 +11,7 @@ let active = document.querySelector(".active");
 let btns = document.querySelector(".btns");
 let full = document.querySelector(".full");
 let closeBtn = document.querySelector(".close_btn");
-let pomodoro = document.querySelector('.pomadoro')
+let pomodoro = document.querySelector(".pomadoro");
 let short_break = document.querySelector(".short-break");
 let long_break = document.querySelector(".long-break");
 let bg = document.querySelector(".bg");
@@ -23,29 +23,29 @@ let min = 20;
 let sec = 0;
 let intervall;
 
-logo.addEventListener('click', ()=>{
+logo.addEventListener("click", () => {
   window.location.reload();
-})
+});
 
-pomodoro.addEventListener('click', ()=>{
+pomodoro.addEventListener("click", () => {
   console.log("salom");
   body.style.backgroundColor = "#518a58";
   pomodoro.classList.add("bg");
   short_break.classList.remove("bg");
   long_break.classList.remove("bg");
-})
-short_break.addEventListener('click', ()=>{
+});
+short_break.addEventListener("click", () => {
   body.style.backgroundColor = "#38858a";
   short_break.classList.add("bg");
   pomodoro.classList.remove("bg");
   long_break.classList.remove("bg");
-})
-long_break.addEventListener('click', ()=>{
+});
+long_break.addEventListener("click", () => {
   body.style.backgroundColor = "#437EA8";
   long_break.classList.add("bg");
   short_break.classList.remove("bg");
   pomodoro.classList.remove("bg");
-})
+});
 
 red.addEventListener("click", () => {
   body.style.backgroundColor = "#ba4949";
@@ -129,6 +129,9 @@ function updateDisplay() {
   let formattedMin = min < 10 ? "0" + min : min;
   let formattedSec = sec < 10 ? "0" + sec : sec;
   time.innerText = `${formattedMin}:${formattedSec}`;
+  const music = new Audio("/beep.wav");
+  music.play();
+
   if (formattedSec == 0 && formattedMin == 0) {
     setTimeout(() => {
       time.innerText = "20:00";
@@ -137,14 +140,3 @@ function updateDisplay() {
 }
 
 updateDisplay();
-
-// btn_start.addEventListener("click", () => {
-//   btn_pause.classList.remove("hidden");
-//   btn_start.classList.add("hidden");
-//   btn_pause.classList.add("style");
-//   setInterval(() => {
-//     let min = 25;
-//     let sec = 60;
-
-//   }, 1000);
-// });
