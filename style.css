@@ -249,7 +249,7 @@ a {
   outline: none;
 }
 .sign-modal {
-  /* display: none; */
+  display: none;
 }
 .added {
   position: absolute;
@@ -261,14 +261,21 @@ a {
   font-size: 10px;
   font-weight: 700;
   overflow: hidden;
+  display: block;
 }
 .log-out {
   padding: 3px 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 2px;
 }
 .login {
   padding: 3px 10px;
   cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 3px;
 }
 .log-out:hover {
   background: #e7e7e7;

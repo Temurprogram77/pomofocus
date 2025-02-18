@@ -16,6 +16,8 @@ let short_break = document.querySelector(".short-break");
 let long_break = document.querySelector(".long-break");
 let bg = document.querySelector(".bg");
 let logo = document.querySelector(".logo");
+let signModal = document.querySelector(".sign-modal");
+let signIn = document.querySelector(".sign-in");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
@@ -26,6 +28,10 @@ let intervall;
 logo.addEventListener("click", () => {
   window.location.reload();
 });
+
+signIn.addEventListener("click", () => {
+  signModal.classList.toggle('added')
+})
 
 pomodoro.addEventListener("click", () => {
   console.log("salom");
