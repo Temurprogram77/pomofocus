@@ -108,7 +108,7 @@ body {
   position: fixed;
   z-index: 3;
   top: 10px;
-  /* right: -300px; */
+  /* right: -400px; */
   padding: 15px;
   border-radius: 10px;
   display: flex;
@@ -118,8 +118,14 @@ body {
   gap: 2rem;
   transition: right 0.2s;
 }
+.settings_modal h2 {
+  font-size: 13px;
+}
 .tog {
   right: 5px;
+}
+.close_btn {
+  cursor: pointer;
 }
 .colors {
   display: flex;
@@ -152,8 +158,8 @@ body {
   left: 0;
 }
 .label {
-  height: 30px;
-  width: 60px;
+  height: 23px;
+  width: 45px;
   background-color: #d1d1d1;
   border-radius: 20px;
   display: flex;
@@ -167,7 +173,7 @@ body {
 }
 
 #checkbox:checked ~ .label::before {
-  left: 32px;
+  left: 22px;
   background-color: #000;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -176,10 +182,28 @@ body {
 .label::before {
   position: absolute;
   content: "";
-  height: 25px;
-  width: 25px;
+  height: 20px;
+  width: 20px;
   border-radius: 50%;
   background: #000;
   left: 3px;
   transition: 0.4s;
+}
+.timer {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  text-align: start;
+}
+.timer input {
+  width: 60px;
+  height: 25px;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 5px;
+}
+.timer p {
+  font-size: 10px;
+  font-weight: 600;
 }
