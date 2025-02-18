@@ -248,3 +248,31 @@ a {
   border: 1.4px solid black;
   outline: none;
 }
+.sign-modal {
+  /* display: none; */
+}
+.added {
+  position: absolute;
+  top: 40px;
+  border-radius: 2px;
+  background: #fff;
+  color: #000;
+  text-align: start;
+  font-size: 10px;
+  font-weight: 700;
+  overflow: hidden;
+}
+.log-out {
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.login {
+  padding: 3px 10px;
+  cursor: pointer;
+}
+.log-out:hover {
+  background: #e7e7e7;
+}
+.login:hover {
+  background: #e7e7e7;
+}
