@@ -32,6 +32,9 @@ body {
   border-radius: 5px;
   transition: background 0.5s;
 }
+.bg {
+  background: #d4d4d442;
+}
 .time {
   margin: 10px 0;
   font-size: 80px;

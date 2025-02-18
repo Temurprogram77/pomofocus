@@ -14,6 +14,7 @@ let closeBtn = document.querySelector(".close_btn");
 let pomodoro = document.querySelector('.pomadoro')
 let short_break = document.querySelector(".short-break");
 let long_break = document.querySelector(".long-break");
+let bg = document.querySelector(".bg");
 
 let btn_start = document.querySelector(".start");
 let btn_pause = document.querySelector(".pause");
@@ -24,15 +25,21 @@ let intervall;
 pomodoro.addEventListener('click', ()=>{
   console.log("salom");
   body.style.backgroundColor = "#518a58";
-  active.style.backgroundColor = "#518a58";
+  pomodoro.classList.add("bg");
+  short_break.classList.remove("bg");
+  long_break.classList.remove("bg");
 })
 short_break.addEventListener('click', ()=>{
   body.style.backgroundColor = "#38858a";
-  active.style.backgroundColor = "#38858a";
+  short_break.classList.add("bg");
+  pomodoro.classList.remove("bg");
+  long_break.classList.remove("bg");
 })
 long_break.addEventListener('click', ()=>{
   body.style.backgroundColor = "#437EA8";
-  active.style.backgroundColor = "#437EA8";
+  long_break.classList.add("bg");
+  short_break.classList.remove("bg");
+  pomodoro.classList.remove("bg");
 })
 
 red.addEventListener("click", () => {
