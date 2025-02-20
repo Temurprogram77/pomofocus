@@ -55,22 +55,18 @@ long_break.addEventListener("click", () => {
 
 red.addEventListener("click", () => {
   body.style.backgroundColor = "#ba4949";
-  active.style.backgroundColor = "#A44E4E";
 });
 
 green.addEventListener("click", () => {
   body.style.backgroundColor = "#518a58";
-  active.style.backgroundColor = "#548059";
 });
 
 dark.addEventListener("click", () => {
   body.style.backgroundColor = "#545764";
-  active.style.backgroundColor = "#565963";
 });
 
 blue.addEventListener("click", () => {
   body.style.backgroundColor = "#38858a";
-  active.style.backgroundColor = "#417B80";
 });
 
 setting.addEventListener("click", () => {
