@@ -62,7 +62,6 @@ red.addEventListener("click", () => {
 green.addEventListener("click", () => {
   body.style.backgroundColor = "#518a58";
   active.style.backgroundColor = "#548059";
-  btns.style.color = "#518a58";
 });
 
 dark.addEventListener("click", () => {
