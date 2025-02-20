@@ -74,7 +74,6 @@ dark.addEventListener("click", () => {
 blue.addEventListener("click", () => {
   body.style.backgroundColor = "#38858a";
   active.style.backgroundColor = "#417B80";
-  btns.style.color = "#38858a";
 });
 
 setting.addEventListener("click", () => {
