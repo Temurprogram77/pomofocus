@@ -39,18 +39,27 @@ pomodoro.addEventListener("click", () => {
   pomodoro.classList.add("bg");
   short_break.classList.remove("bg");
   long_break.classList.remove("bg");
+  time.textContent = "20:00"
+  min = 20;
+  updateDisplay()
 });
 short_break.addEventListener("click", () => {
   body.style.backgroundColor = "#38858a";
   short_break.classList.add("bg");
   pomodoro.classList.remove("bg");
   long_break.classList.remove("bg");
+  time.textContent = "05:00"
+  min = 5;
+  updateDisplay()
 });
 long_break.addEventListener("click", () => {
   body.style.backgroundColor = "#437EA8";
   long_break.classList.add("bg");
   short_break.classList.remove("bg");
   pomodoro.classList.remove("bg");
+  time.textContent = "10:00"
+  min = 10;
+  updateDisplay()
 });
 
 red.addEventListener("click", () => {
