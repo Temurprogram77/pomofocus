@@ -41,6 +41,9 @@ pomodoro.addEventListener("click", () => {
   short_break.classList.remove("bg");
   long_break.classList.remove("bg");
   time.textContent = "20:00"
+  btn_pause.classList.add("hidden");
+  btn_start.classList.remove("hidden");
+  btn_start.classList.add("style");
   clearInterval(intervall);
   min = 20;
   sec = 0;
@@ -52,6 +55,9 @@ short_break.addEventListener("click", () => {
   pomodoro.classList.remove("bg");
   long_break.classList.remove("bg");
   time.textContent = "05:00"
+  btn_pause.classList.add("hidden");
+  btn_start.classList.remove("hidden");
+  btn_start.classList.add("style");
   clearInterval(intervall);
   min = 5;
   sec = 0;
@@ -63,6 +69,9 @@ long_break.addEventListener("click", () => {
   short_break.classList.remove("bg");
   pomodoro.classList.remove("bg");
   time.textContent = "10:00"
+  btn_pause.classList.add("hidden");
+  btn_start.classList.remove("hidden");
+  btn_start.classList.add("style");
   clearInterval(intervall);
   min = 10;
   sec = 0;
