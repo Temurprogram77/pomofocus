@@ -1,6 +1,7 @@
 let style_st = document.querySelector(".style");
 let time = document.querySelector(".time");
 let setting = document.querySelector(".setting");
+let okay = document.querySelector(".okay");
 let modal = document.querySelector(".settings_modal");
 let green = document.querySelector(".green");
 let red = document.querySelector(".red");
@@ -90,6 +91,10 @@ closeBtn.addEventListener("click", () => {
   modal.classList.remove("tog");
   full.classList.add("hidden");
 });
+okay.addEventListener('click', ()=>{
+  modal.classList.remove("tog");
+  full.classList.add("hidden");
+})
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
