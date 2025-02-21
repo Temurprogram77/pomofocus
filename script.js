@@ -41,7 +41,9 @@ pomodoro.addEventListener("click", () => {
   short_break.classList.remove("bg");
   long_break.classList.remove("bg");
   time.textContent = "20:00"
+  clearInterval(intervall);
   min = 20;
+  sec = 0;
   updateDisplay()
 });
 short_break.addEventListener("click", () => {
@@ -50,7 +52,9 @@ short_break.addEventListener("click", () => {
   pomodoro.classList.remove("bg");
   long_break.classList.remove("bg");
   time.textContent = "05:00"
+  clearInterval(intervall);
   min = 5;
+  sec = 0;
   updateDisplay()
 });
 long_break.addEventListener("click", () => {
@@ -59,7 +63,9 @@ long_break.addEventListener("click", () => {
   short_break.classList.remove("bg");
   pomodoro.classList.remove("bg");
   time.textContent = "10:00"
+  clearInterval(intervall);
   min = 10;
+  sec = 0;
   updateDisplay()
 });
 
@@ -91,10 +97,22 @@ closeBtn.addEventListener("click", () => {
   modal.classList.remove("tog");
   full.classList.add("hidden");
 });
+
+let pomodoro_inp = document.querySelector('.pomodoro_timer input')
 okay.addEventListener('click', ()=>{
   modal.classList.remove("tog");
   full.classList.add("hidden");
+  time.textContent = `${pomodoro_inp.value < 9 ? `0${pomodoro_inp.value}`:`${pomodoro_inp.value}`}:00`;
+  min = pomodoro_inp.value;
+  updateDisplay();
 })
+
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    modal.classList.remove("tog");
+    full.classList.add("hidden");
+  }
+});
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape") {
@@ -108,7 +126,6 @@ btn_pause.addEventListener("click", () => {
   btn_start.classList.remove("hidden");
   btn_start.classList.add("style");
   setTimeout(() => {
-    time.innerText = "20:00";
     clearInterval(intervall);
   }, 100);
 });
