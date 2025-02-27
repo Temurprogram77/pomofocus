@@ -107,7 +107,9 @@ closeBtn.addEventListener("click", () => {
   full.classList.add("hidden");
 });
 
-let pomodoro_inp = document.querySelector('.pomodoro_timer input')
+let pomodoro_inp = document.querySelector('.pomodoro_timer input');
+let short_timer_inp = document.querySelector('.short_timer input');
+let long_timer_inp = document.querySelector('.long_timer input');
 okay.addEventListener('click', ()=>{
   modal.classList.remove("tog");
   full.classList.add("hidden");
