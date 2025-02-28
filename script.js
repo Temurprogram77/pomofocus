@@ -31,8 +31,8 @@ logo.addEventListener("click", () => {
 });
 
 signIn.addEventListener("click", () => {
-  signModal.classList.toggle('added')
-})
+  signModal.classList.toggle("added");
+});
 
 pomodoro.addEventListener("click", () => {
   console.log("salom");
@@ -40,42 +40,42 @@ pomodoro.addEventListener("click", () => {
   pomodoro.classList.add("bg");
   short_break.classList.remove("bg");
   long_break.classList.remove("bg");
-  time.textContent = "20:00"
+  time.textContent = "20:00";
   btn_pause.classList.add("hidden");
   btn_start.classList.remove("hidden");
   btn_start.classList.add("style");
   clearInterval(intervall);
   min = 20;
   sec = 0;
-  updateDisplay()
+  updateDisplay();
 });
 short_break.addEventListener("click", () => {
   body.style.backgroundColor = "#38858a";
   short_break.classList.add("bg");
   pomodoro.classList.remove("bg");
   long_break.classList.remove("bg");
-  time.textContent = "05:00"
+  time.textContent = "05:00";
   btn_pause.classList.add("hidden");
   btn_start.classList.remove("hidden");
   btn_start.classList.add("style");
   clearInterval(intervall);
   min = 5;
   sec = 0;
-  updateDisplay()
+  updateDisplay();
 });
 long_break.addEventListener("click", () => {
   body.style.backgroundColor = "#437EA8";
   long_break.classList.add("bg");
   short_break.classList.remove("bg");
   pomodoro.classList.remove("bg");
-  time.textContent = "10:00"
+  time.textContent = "10:00";
   btn_pause.classList.add("hidden");
   btn_start.classList.remove("hidden");
   btn_start.classList.add("style");
   clearInterval(intervall);
   min = 10;
   sec = 0;
-  updateDisplay()
+  updateDisplay();
 });
 
 red.addEventListener("click", () => {
@@ -107,16 +107,22 @@ closeBtn.addEventListener("click", () => {
   full.classList.add("hidden");
 });
 
-let pomodoro_inp = document.querySelector('.pomodoro_timer input');
-let short_timer_inp = document.querySelector('.short_timer input');
-let long_timer_inp = document.querySelector('.long_timer input');
-okay.addEventListener('click', ()=>{
-  modal.classList.remove("tog");
-  full.classList.add("hidden");
-  time.textContent = `${pomodoro_inp.value < 9 ? `0${pomodoro_inp.value}`:`${pomodoro_inp.value}`}:00`;
-  min = pomodoro_inp.value;
-  updateDisplay();
-})
+let pomodoro_inp = document.querySelector(".pomodoro_timer input");
+let short_timer_inp = document.querySelector(".short_timer input");
+let long_timer_inp = document.querySelector(".long_timer input");
+okay.addEventListener("click", () => {
+  if (pomodoro_inp.value) {
+    modal.classList.remove("tog");
+    full.classList.add("hidden");
+    time.textContent = `${
+      pomodoro_inp.value < 9
+        ? `0${pomodoro_inp.value}`
+        : `${pomodoro_inp.value}`
+    }:00`;
+    min = pomodoro_inp.value;
+    updateDisplay();
+  }
+});
 
 document.addEventListener("keydown", (event) => {
   if (event.key === "Enter") {
